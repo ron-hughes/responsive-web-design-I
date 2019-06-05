@@ -290,6 +290,25 @@ margin-left: 20px;
 	line-height: 20px;
 	}
 
+
+/* MEDIA QUERIES */
+
+    /* TABLET */
+@media (max-width: 800px){
+    .mymenu {
+        display: block;
+        background: turquoise;
+
+    }
+
+}
+
+    /* PHONE */
+@media (max-width: 500px){
+
+}
+
+
 /* PAGE ELEMENTS */
 
 hr { 
