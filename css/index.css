@@ -140,8 +140,9 @@ main h3{
 main {
 	display: flex;
 	justify-content: flex-start;
-	width: 950px;
+	width: 900px;
 	background-color: white;
+	border-top: 1px solid #000;
 }
 
 main .features  { 
@@ -182,12 +183,7 @@ main img {
 	justify-content: space-between;
 	width: 900px;
 	background-color: white;
-}
-
-
-.services-header-img {
-	/* width: 950px; */
-
+	border-bottom: 1px solid #000 !important;
 }
 
 .box-container { 
@@ -288,19 +284,36 @@ margin-left: 20px;
 .bottom-container li {
 	list-style-type: square;
 	line-height: 20px;
-	}
+}
 
 
 /* MEDIA QUERIES */
 
     /* TABLET */
 @media (max-width: 800px){
-    .mymenu {
-        display: block;
-        background: turquoise;
+	.mymenu {
+		display: flex;
+		justify-content: center;
+		flex-direction: column-reverse;
+	}
+	.mymenu img {
+		margin-bottom: 30px;
+	}
 
-    }
+	.header-image { 
+		display: none;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+	}
+	.header-motto h1 {
+		margin-right: 120px;
+	}
 
+	.header-motto button {
+		margin-right: 120px;
+	 }
 }
 
     /* PHONE */
