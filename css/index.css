@@ -140,7 +140,7 @@ main h3{
 main {
 	display: flex;
 	justify-content: flex-start;
-	width: 900px;
+	width: 875px;
 	background-color: white;
 	border-top: 1px solid #000;
 }
@@ -314,6 +314,9 @@ margin-left: 20px;
 	.header-motto button {
 		margin-right: 120px;
 	 }
+	 main {
+		width: 100%;
+	}
 }
 
     /* PHONE */
