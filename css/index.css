@@ -63,12 +63,17 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 /* CONTENT CONTAINER */ 
 
 .container {
-	width: 875px;
+	max-width: 875px; 
 	margin: 0 auto;
 	background-color: white;
 }
@@ -77,6 +82,7 @@ h1, h2, h3, h4, h5 {
 /* HOME MENU */
 
 .mymenu { 
+	max-width: 875px;
 	display: flex;
 	padding: 15px;
 	margin-left: -40px;
@@ -84,7 +90,8 @@ h1, h2, h3, h4, h5 {
 	align-items: center;
 	justify-content: space-between;
 }
-.mymenu nav a{ 
+.mymenu nav a {
+	max-width: 875px; 
 	text-decoration: none;
 	padding: 30px;
 	color: gray;
@@ -100,7 +107,7 @@ h1, h2, h3, h4, h5 {
 /* HEADER */
 header {
 	display: flex;
-	width: 950px;
+	max-width: 875px;
 	background-color: white;
 }
 
@@ -108,7 +115,7 @@ header .header-motto {
 	font-size: 85px;
 	text-align: center;
 	background-color: white;
-	margin: 45px;
+	margin: 50px;
 	margin-top: 100px;
 }
 
@@ -140,7 +147,7 @@ main h3{
 main {
 	display: flex;
 	justify-content: flex-start;
-	width: 875px;
+	max-width: 875px;
 	background-color: white;
 	border-top: 1px solid #000;
 }
@@ -170,6 +177,10 @@ main img {
 	text-align: center;
 }
 
+footer {
+	max-width: 875px;
+}
+
 /* SERVICES PAGE CSS */
 
 /* BOTTOM MAIN */ 
@@ -181,7 +192,7 @@ main img {
 .bottom-section {
 	display: flex;
 	justify-content: space-between;
-	width: 900px;
+	max-width: 900px;
 	background-color: white;
 	border-bottom: 1px solid #000 !important;
 }
@@ -292,7 +303,6 @@ margin-left: 20px;
     /* TABLET */
 @media (max-width: 800px){
 	.mymenu {
-		display: flex;
 		justify-content: center;
 		flex-direction: column-reverse;
 	}
@@ -306,6 +316,8 @@ margin-left: 20px;
 	header {
 		display: flex;
 		justify-content: center;
+		align-content: center;
+		align-items: center;
 	}
 	.header-motto h1 {
 		margin-right: 120px;
@@ -321,6 +333,9 @@ margin-left: 20px;
 
     /* PHONE */
 @media (max-width: 500px){
+	.mymenu {
+		flex-direction: column-reverse;
+	}
 
 }
 
@@ -328,18 +343,18 @@ margin-left: 20px;
 /* PAGE ELEMENTS */
 
 hr { 
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: 48px;
-  border-style: inset;
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: 48px;
+	border-style: inset;
 	border-width: 1px;
 	border-color: black;
 	width: 100%;
 } 
 
 li {
-list-style-type: none;
-line-height: 20px;
+	list-style-type: none;
+	line-height: 20px;
 }
