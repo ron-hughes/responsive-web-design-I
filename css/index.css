@@ -84,14 +84,14 @@ img {
 .mymenu { 
 	max-width: 875px;
 	display: flex;
-	margin-left: -40px;
+	margin-left: -20px;
 	background: white;
 	align-items: center;
 	justify-content: space-between;
 }
 .mymenu nav a {
 	text-decoration: none;
-	padding: 30px;
+	padding: 20px;
 	color: gray;
 }
 
@@ -303,6 +303,7 @@ margin-left: 20px;
 	.mymenu {
 		justify-content: center;
 		flex-direction: column-reverse;
+		max-width: 800px;
 	}
 
 	.mymenu nav a {
@@ -339,11 +340,17 @@ margin-left: 20px;
 	.mymenu nav a{
 		display: flex;
 		flex-direction: column;
-		border-bottom: 1px solid black;
+		/* border-bottom: 1px solid black; */
+		border-top: 1px solid black;
 		border-width: 100%;
-		width: 400px;
+		width: 503px;
 		align-items: center;
 	}
+
+	nav a:last-child {
+		border-bottom: 1px solid black;
+	}
+
 	main {
 		display: flex;
 		flex-direction: column;
@@ -351,14 +358,31 @@ margin-left: 20px;
 	}
 
 	
+	main .features {
+		margin-top: 50px;
+	}
+
 	main .about {
 		margin-left: 0px;
 	}
+	header {
+		max-width: 875px;
+	}
+	.bottom-section .product {
+	margin-top: 30px;
+	}
+
+	.bottom-section .vision {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+
 	
 	.bottom-section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		justify-content: space-between;
 	}
 
 }
